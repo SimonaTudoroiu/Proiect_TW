@@ -1,0 +1,25 @@
+{
+    "cale_baza": "resurse/imagini/erori",
+    "erori": [
+        {
+            "identificator":404,
+            "titlu":"404 - Pagina accesata nu exista!",
+            "text": "Incercati alta pagina.",
+            "imagine":"lupa.png"
+        },
+        {
+            "identificator":403,
+            "titlu":"403 - Nu aveti permisiune de accesare a paginii!",
+            "text": "Site-ul nu va permite sa accesati aceasta pagina.",
+            "imagine":"interzis.png"
+        },
+        
+        {
+            "identificator":1,
+            "titlu":"Site în lucru",
+            "text": "Muncim sa facem site-ul cat mai bun!!",
+            "imagine":"interzis.png"
+        }
+    ]
+  }
+  

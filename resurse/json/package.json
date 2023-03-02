@@ -1,0 +1,47 @@
+{
+  "name": "proiect-tehnici-web",
+  "version": "1.0.0",
+  "description": "site produse make-up",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "keywords": [
+    "machiaj",
+    "make-up",
+    "farduri",
+    "fard",
+    "ruj",
+    "rujuri",
+    "eyeliner",
+    "machiaje",
+    "creioane",
+    "creion",
+    "buze",
+    "fata",
+    "ochi",
+    "rimel",
+    "mascara",
+    "gloss",
+    "lip-gloss",
+    "balsam",
+    "ten",
+    "pudra",
+    "iluminator",
+    "contur",
+    "conturing",
+    "highlight",
+    "blush",
+    "gene"
+  ],
+  "author": "Simona Tudoroiu",
+  "license": "ISC",
+  "engines": {
+    "node":"16.x"
+  },
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.3"
+  }
+}

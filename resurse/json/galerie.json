@@ -1,0 +1,271 @@
+{
+	"cale_galerie":"resurse/imagini/galerie",
+	"imagini": [
+		{
+			"fisier":"balsam.png",
+			"titul":"Balsam de buze",
+			"descriere":"Balsam de buze",
+			"sfert_ora":"1",
+			"galerie_animata":true
+		},
+		{
+			"fisier":"blush.png",
+			"titlu":"Blush",
+			"descriere":"Blush",
+			"sfert_ora":"1",
+			"galerie_animata":true
+		},
+		{
+			"fisier":"corector.png",
+			"titlu":"Concealer",
+			"descriere":"Concealer",
+			"sfert_ora":"1",
+			"galerie_animata":true
+		},
+		{
+			"fisier":"rimel1.png",
+			"titlu":"Rimel",
+			"descriere":"Rimel",
+			"sfert_ora":"1",
+			"galerie_animata":true
+		},
+		{
+			"fisier":"ruj1.png",
+			"titlu":"Ruj",
+			"descriere":"Ruj",
+			"sfert_ora":"1",
+			"galerie_animata":true
+		},
+		{
+			"fisier":"creion_sprancene.png",
+			"titlu":"Creion de sprancene",
+			"descriere":"Creion de sprancene",
+			"sfert_ora":"1",
+			"galerie_animata":true
+		},
+		{
+			"fisier":"gloss.png",
+			"titlu":"Lip gloss",
+			"descriere":"Lip gloss",
+			"sfert_ora":"1",
+			"galerie_animata":true
+		},
+		{
+			"fisier":"iluminator.png",
+			"titlu":"Iluminator",
+			"descriere":"Iluminator",
+			"sfert_ora":"1",
+			"galerie_animata":true
+
+		},
+		{
+			"fisier":"paleta1.png",
+			"titlu":"Paleta de machiaj Nude",
+			"descriere":"Paleta de machiaj Nude",
+			"sfert_ora":"1",
+			"galerie_animata":true
+
+		},
+		{
+			"fisier":"paleta2.png",
+			"titlu":"Paleta de machiaj Rainbow",
+			"descriere":"Paleta de machiaj Rainbow",
+			"sfert_ora":"1",
+			"galerie_animata":true
+		},
+		{
+			"fisier":"paleta3.png",
+			"titlu":"Paleta de machiaj Soft",
+			"descriere":"Paleta de machiaj Soft",
+			"sfert_ora":"2",
+			"galerie_animata":true
+		},
+		{
+			"fisier":"perle de contur.png",
+			"titlu":"Perle de contur",
+			"descriere":"Perle de contur",
+			"sfert_ora":"3",
+			"galerie_animata":true
+		},
+		{
+			"fisier":"pudra.png",
+			"titlu":"Pudra de fata",
+			"descriere":"Pudra de fata",
+			"sfert_ora":"4",
+			"galerie_animata":true
+		},
+		{
+			"fisier":"lipstick.png",
+			"titlu":"Lipstick",
+			"descriere":"Lipstick",
+			"sfert_ora":"2",
+			"galerie_animata":true
+		},
+		{
+			"fisier":"make-up.png",
+			"titlu":"Make-up",
+			"descriere":"Make-up",
+			"sfert_ora":"2",
+			"galerie_animata":true
+		},
+		{
+			"fisier":"blush.png",
+			"titlu":"Blush",
+			"descriere":"Blush",
+			"sfert_ora":"2"
+		},
+		{
+			"fisier":"corector.png",
+			"titlu":"Concealer",
+			"descriere":"Concealer",
+			"sfert_ora":"2"
+		},
+		{
+			"fisier":"rimel1.png",
+			"titlu":"Rimel",
+			"descriere":"Rimel",
+			"sfert_ora":"2"
+		},
+		{
+			"fisier":"ruj1.png",
+			"titlu":"Ruj",
+			"descriere":"Ruj",
+			"sfert_ora":"2"
+		},
+		{
+			"fisier":"creion_sprancene.png",
+			"titlu":"Creion de sprancene",
+			"descriere":"Creion de sprancene",
+			"sfert_ora":"2"
+		},
+		{
+			"fisier":"gloss.png",
+			"titlu":"Lip gloss",
+			"descriere":"Lip gloss",
+			"sfert_ora":"2"
+		},
+		{
+			"fisier":"iluminator.png",
+			"titlu":"Iluminator",
+			"descriere":"Iluminator",
+			"sfert_ora":"2"
+
+		},
+		{
+			"fisier":"paleta3.png",
+			"titlu":"Paleta de machiaj Soft",
+			"descriere":"Paleta de machiaj Soft",
+			"sfert_ora":"2"
+		},
+		{
+			"fisier":"paleta2.png",
+			"titlu":"Paleta de machiaj Rainbow",
+			"descriere":"Paleta de machiaj Rainbow",
+			"sfert_ora":"3"
+		},
+		{
+			"fisier":"balsam.png",
+			"titul":"Balsam de buze",
+			"descriere":"Balsam de buze",
+			"sfert_ora":"3"
+		},
+		{
+			"fisier":"blush.png",
+			"titlu":"Blush",
+			"descriere":"Blush",
+			"sfert_ora":"3"
+		},
+		{
+			"fisier":"corector.png",
+			"titlu":"Concealer",
+			"descriere":"Concealer",
+			"sfert_ora":"3"
+		},
+		{
+			"fisier":"rimel1.png",
+			"titlu":"Rimel",
+			"descriere":"Rimel",
+			"sfert_ora":"3"
+		},
+		{
+			"fisier":"ruj1.png",
+			"titlu":"Ruj",
+			"descriere":"Ruj",
+			"sfert_ora":"3"
+		},
+		{
+			"fisier":"creion_sprancene.png",
+			"titlu":"Creion de sprancene",
+			"descriere":"Creion de sprancene",
+			"sfert_ora":"3"
+		},
+		{
+			"fisier":"gloss.png",
+			"titlu":"Lip gloss",
+			"descriere":"Lip gloss",
+			"sfert_ora":"3"
+		},
+		{
+			"fisier":"iluminator.png",
+			"titlu":"Iluminator",
+			"descriere":"Iluminator",
+			"sfert_ora":"3"
+
+		},
+		{
+			"fisier":"paleta2.png",
+			"titlu":"Paleta de machiaj Rainbow",
+			"descriere":"Paleta de machiaj Rainbow",
+			"sfert_ora":"4"
+		},
+		{
+			"fisier":"balsam.png",
+			"titul":"Balsam de buze",
+			"descriere":"Balsam de buze",
+			"sfert_ora":"4"
+		},
+		{
+			"fisier":"blush.png",
+			"titlu":"Blush",
+			"descriere":"Blush",
+			"sfert_ora":"4"
+		},
+		{
+			"fisier":"corector.png",
+			"titlu":"Concealer",
+			"descriere":"Concealer",
+			"sfert_ora":"4"
+		},
+		{
+			"fisier":"rimel1.png",
+			"titlu":"Rimel",
+			"descriere":"Rimel",
+			"sfert_ora":"4"
+		},
+		{
+			"fisier":"ruj1.png",
+			"titlu":"Ruj",
+			"descriere":"Ruj",
+			"sfert_ora":"4"
+		},
+		{
+			"fisier":"creion_sprancene.png",
+			"titlu":"Creion de sprancene",
+			"descriere":"Creion de sprancene",
+			"sfert_ora":"4"
+		},
+		{
+			"fisier":"gloss.png",
+			"titlu":"Lip gloss",
+			"descriere":"Lip gloss",
+			"sfert_ora":"4"
+		},
+		{
+			"fisier":"iluminator.png",
+			"titlu":"Iluminator",
+			"descriere":"Iluminator",
+			"sfert_ora":"4"
+
+		}
+	]
+}
