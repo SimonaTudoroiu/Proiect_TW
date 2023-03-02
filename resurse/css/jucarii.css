@@ -1,0 +1,63 @@
+@media screen and (min-width:1001px){
+    .grid-jucarii{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap:10px;
+    }
+    .grid-jucarii{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap:10px;
+    }
+
+    .jucarie:nth-child(8n+2){
+        background-color: pink;
+        text-align: center;
+    }
+    .jucarie:nth-child(8n+4){
+        background-color: pink;
+        text-align: center;
+    }
+    .jucarie:nth-child(8n+5){
+        background-color: turquoise;
+        text-align: center;
+    }
+    .jucarie:nth-child(8n+7){
+        background-color: turquoise;
+        text-align: center;
+    }
+    .jucarie:nth-child(8n+1){
+        background-color: white;
+        text-align: center;
+    }
+    .jucarie:nth-child(8n+3){
+        background-color: white;
+        text-align: center;
+    }
+    .jucarie:nth-child(8n+6){
+        background-color: white;
+        text-align: center;
+    }
+    .jucarie:nth-child(8n){
+        background-color: white;
+        text-align: center;
+    }
+    .jucarie h2:hover ~ #pret{
+        outline: 2px solid green;
+        transform: rotate(45deg);
+    }
+    .jucarie h2 ~ #pret{
+        transition-property: outline, transform;
+        transition-duration: 3s;
+    }
+}
+@media only screen and (max-width: 1000px){
+    .grid-jucarii{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap:10px;
+    }
+    .jucarie {
+        background-color: white;
+    }
+}

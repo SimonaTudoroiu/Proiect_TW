@@ -1,0 +1,364 @@
+body {
+    background-color: #E07676;
+    color: #613333;
+    --border: #615050;
+    --outline: #E6BEBE;
+    --text_decoration: #AD5C5C;
+    --padding-intern: 5%;
+
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "zona-unu zona-unu zona-unu zona-unu"
+                         "zona-opt zona-opt zona-opt zona-opt"
+                         "zona-trei zona-doi zona-doi zona-patru"
+                         "zona-cinci zona-sase zona-sapte zona-sapte";               
+}
+.grid-container>:nth-child(1){ grid-area: zona-unu; border: 1px solid black; background-color: #E6BEBE; }
+.grid-container>:nth-child(2){ grid-area: zona-doi; border: 1px solid black; background-color: #E6BEBE;}
+.grid-container>:nth-child(3){ grid-area: zona-trei; border: 1px solid black; background-color: #E6BEBE;}
+.grid-container>:nth-child(4){ grid-area: zona-patru; border: 1px solid black; background-color: #E6BEBE;}
+.grid-container>:nth-child(5){ grid-area: zona-cinci; border: 1px solid black; background-color: #E6BEBE;}
+.grid-container>:nth-child(6){ grid-area: zona-sase; border: 1px solid black; background-color: #E6BEBE;}
+.grid-container>:nth-child(7){ grid-area: zona-sapte; border: 1px solid black; background-color: #E6BEBE;}
+.grid-container>:nth-child(8){ grid-area: zona-opt; border: 1px solid black; background-color: #E6BEBE;}
+.poze {
+    display: flex;
+}
+.poza {
+    flex: 50%;
+    padding: 5px;
+    text-align: center;
+    font-size: 20px;
+}
+@media screen and (max-width: 700px) {
+    div.grid-container {
+        font-size: 30px;
+    }
+}
+@media screen and (min-width: 701px) and (max-width: 900px) {
+    div.grid-container {
+        font-size: 32px;
+    }
+}
+@media screen and (min-width: 901px) {
+    div.grid-container {
+        font-size: 34px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    * {
+        transition: none;
+		animation: none ;
+    }
+    .grid-container {
+        display: block;
+    }
+    .grid-container>:nth-child(1){ grid-area: zona-unu; border: none; background-color: initial;}
+    .grid-container>:nth-child(2){ grid-area: zona-doi; border: none; background-color: initial;}
+    .grid-container>:nth-child(3){ grid-area: zona-trei; border: none; background-color: initial;}
+    .grid-container>:nth-child(4){ grid-area: zona-patru; border: none; background-color: initial;}
+    .grid-container>:nth-child(5){ grid-area: zona-cinci; border: none; background-color: initial;}
+    .grid-container>:nth-child(6){ grid-area: zona-sase; border: none; background-color: initial;}
+    .grid-container>:nth-child(7){ grid-area: zona-sapte; border: none; background-color: initial;}
+    .grid-container>:nth-child(8){ grid-area: zona-opt; border: none; background-color: initial;}
+    .poze {
+        display: initial;
+    }
+    .poza {
+        padding: 5px;
+        text-align: center;
+        font-size: 15px;
+    }
+}
+
+@media only screen and (min-width: 701px) and (max-width: 900px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas: "zona-unu zona-doi"
+                             "zona-trei zona-patru"
+                             "zona-cinci zona-sase"
+                             "zona-sapte zona-opt"
+    }
+    .grid-container>:nth-child(1){ grid-area: zona-unu; border: 1px solid black; background-color: #E6BEBE; }
+    .grid-container>:nth-child(2){ grid-area: zona-doi; border: 1px solid black; background-color: #E6BEBE;}
+    .grid-container>:nth-child(3){ grid-area: zona-trei; border: 1px solid black; background-color: #E6BEBE;}
+    .grid-container>:nth-child(4){ grid-area: zona-patru; border: 1px solid black; background-color: #E6BEBE;}
+    .grid-container>:nth-child(5){ grid-area: zona-cinci; border: 1px solid black; background-color: #E6BEBE;}
+    .grid-container>:nth-child(6){ grid-area: zona-sase; border: 1px solid black; background-color: #E6BEBE;}
+    .grid-container>:nth-child(7){ grid-area: zona-sapte; border: 1px solid black; background-color: #E6BEBE;}
+    .grid-container>:nth-child(8){ grid-area: zona-opt; border: 1px solid black; background-color: #E6BEBE;}
+}
+.zona8 .video iframe {
+    display:flex;
+    justify-content: end;
+    width: 100%;
+    height: 700px;
+}
+.zona8 .taburi-iframe {
+    display: flex;
+    justify-content:end;
+}
+.zona8 .taburi-iframe a{
+    text-decoration:none;
+    width: 200px;
+    font-size: 20px;
+    display:inline-block;
+    border:1px solid #613333;
+    border-top: none;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: #E07676;
+    color:#613333;
+    transition:all 0.5s linear;
+    text-align: center;
+}
+.zona8 .taburi-iframe a+a{
+    
+    margin-left:5px;
+}
+.zona8 .taburi-iframe a:hover{
+    background-image: none;
+    background-color: white;
+}
+#link-top{
+    position: fixed;
+    display:block;
+    opacity:0.5;
+    bottom:0;
+    right:0;
+    width:50px;
+    height:50px;
+    background-color: white;
+    border-top-left-radius: 45%;
+    border-top-right-radius: 45%;
+    border:1px solid #615050;
+    box-shadow:0px 0px 7px 2px inset #613333 ;
+    overflow:visible;
+    transition: opacity 0.5s linear;
+}
+#link-top:hover{
+    opacity:1;
+    
+}
+#sageata{
+    position:absolute;
+    bottom: -10px;;
+    right:42px;
+    color: #613333;
+    background-clip: border-box;
+    padding:0;
+    width: 0;
+    box-sizing:border-box;
+    font-size: 50px;
+    
+}
+#sageata:hover {
+    animation-name: animatie_sageata;
+    animation-name: animatie_sageata;
+    animation-iteration-count:1;
+    animation-duration:0.5s;
+    animation-fill-mode:forwards;
+    animation-timing-function:linear;
+}
+@keyframes animatie_sageata {
+    
+    100% {
+        transform: scale(1.5,1.5) translate(-5px, 0) ;
+
+    }
+}
+.titlu {
+    font-family: 'Tangerine', serif;
+    font-size: 48px;
+}
+::cue {
+    background-color: white;
+    color:#613333;
+}
+table.tabel>caption {
+    caption-side: bottom;
+}
+table.tabel {
+    border-collapse: collapse;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 600px;
+    width: 600px;
+}
+tbody td:nth-child(even), thead th:nth-child(even){
+    border-left: 1px solid black;
+    border-right: 1px solid white;
+    border-top: 1px solid #615050;
+    border-bottom: 1px solid #615050;
+}
+tbody td:nth-child(odd), thead th:nth-child(odd) {
+    border-left: 1px solid white;
+    border-right: 1px solid black ;
+    border-top: 1px solid #615050;
+    border-bottom: 1px solid #615050;
+}
+tfoot td{
+    border-left: 1px solid white;
+    border-right: 1px solid white ;
+    border-top: 1px solid #615050;
+    border-bottom: 1px solid #615050;
+}
+thead tr:last-child {
+    border-bottom: 3px solid #615050;
+}
+tbody tr:last-child {
+    border-bottom: 3px solid #615050;
+}
+tr:hover {
+    box-shadow: inset 0 0 20px 4px white;
+}
+tr {
+    transition: box-shadow 500ms linear;
+}
+@media only screen and (max-width: 700px) {
+    .zona2 {
+        overflow-x: scroll;
+    }
+}
+#banner {
+    display: none;
+}
+#watermark{
+    display: none;
+}
+@media print {
+	h1{
+		margin-top: 50%;
+		text-align:center;
+		margin-left:1cm;
+
+	}
+    nav {
+        page-break-after: always;
+    }
+    nav ul.menu li a, nav ul.menu li div{
+		color: black;
+	}
+    #grid-container{
+        
+        font-size: 10px;
+		box-sizing:border-box;
+		page-break-before:always;
+		background-color: white;
+		display:block;
+	}
+    html, body {
+    width: 210mm;
+    overflow:visible !important;
+    }
+    #watermark
+    {
+        z-index: 100;
+        width: 60%;
+        height: 10%;
+        display: block;
+        position: fixed;
+        top:50px;
+        left: 25%;
+        border:2px solid black;
+        text-align: center;
+        white-space: pre-wrap;
+
+    }
+    #watermark::after{
+        content:"Tudoroiu\a Simona";
+        background: white;
+        color:black;
+        opacity:0.3;
+        font-size: 50px;
+        text-align: center;
+    }
+    .poza, video, figure>picture, figure>figcaption, .video{
+        display: none;
+    }
+    #link-top{
+        display: none;
+    }
+    .link{
+        color: black;
+        font-weight: 100;
+        text-decoration: none;
+    }
+
+	#footer{
+		page-break-before: always;
+	}
+    #banner{
+        position: absolute;
+		display: inline-block;
+        right:0;
+        top: 0;
+        width: 50%;
+        overflow: visible;
+    }
+    #banner::after{
+        content:"Acesta este un proiect scolar.";
+		position: absolute;
+		font-size:30px;
+		right:0;
+		border:5px double black;
+		width:400px;
+		display: block;
+	}
+    
+    nav ul.meniu ul{
+        all:unset;
+        display: list-item;
+    }
+    nav .meniu{
+        all: unset;
+        display: list-item;
+    }
+    nav ul.meniu>li{
+        all:unset;
+        display: list-item;
+    }
+    nav ul.meniu, nav ul.meniu li{
+        all: unset;
+        display: list-item;
+    }
+    nav ul.meniu li{
+        all: unset;
+        display: list-item;
+    }
+    nav ul.meniu li a, nav ul.meniu li div{
+        all: unset;
+        display: list-item;
+    }
+	#icon{
+		display: none;
+	}
+	nav ul.meniu li{
+		list-style-type: circle;
+	}
+ 
+
+	@page {
+		size: A4 portrait;
+		margin-bottom:2cm;
+		margin-top:2cm;
+		counter-increment: page;
+	}
+	@page:left{
+
+		margin-left:2cm;
+		margin-right:1cm;
+	}
+	@page:right{
+
+		margin-right:2cm;
+		margin-left:1cm;
+	}
+} 
