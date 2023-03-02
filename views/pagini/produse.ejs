@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html  lang="ro">
+    <head>
+        <meta name="description" content="Firma Colourful Make-up ofera produse de make-up calitative la un pret accesibil, cu posibilitatea comandarii online a produselor si livrarea in 24-48 de ore. Produsele noastre sunt vegane, de o calitate superioara, facute special pentru o aplicare usoara a produselor. Va invitam sa le incercati si sa va bucurati de ele cel putin la fel de mult precum ne-am bucurat noi sa le fabricam!">
+        <meta name="keywords" content="make-up, make-up look, machiaj, trusa machiaj, palete machiaj, Colourful Make-up, machiaj, machiaje, site de machiaje, site machiaje, produse de machiaj, truse machiaj, truse de machiaj, Colourful, make-up, machiaj, firma machiaj, palete, palete de machiaj, palete de farduri, fard, farduri, fard de ochi, mascara, rimel, creioane de ochi, ochi, creioane, pomade, pomada, creion de sprancene, gel de sprancene, trusa de machiaj, produse pentru fata, fond de ten, fonduri de ten, blush, iluminatoare, iluminator, corector, corectoare, conceler, contur, contur fata, contur de fata, contur pentru fata, pudra, pudra pentru fata, pudra translucida, acoperire, buze, rujuri, produse pentru buze, lip gloss, balsam de buze, creioane de buze, produse buze">
+        <title>Colourful Make-up</title>
+        <link rel="stylesheet" href="/resurse/css/produse.css" type="text/css" />
+        <script type="text/javascript" src=/resurse/js/produse.js></script>
+
+        <%- include("../fragmente/head.ejs"); %>
+
+        <script src="https://kit.fontawesome.com/f5dfffb5a7.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+
+    </head>
+    <body>
+    <%- include("../fragmente/header") %>
+
+    <main>
+        <label> Nume: <input type="text" id="inp-nume"></label>
+        <div> Cantitate:
+            <p><label>Produs mic (cantitate &lt; 10)
+                <input id="i_rad1"  name="gr_rad" value="0:10" type="radio"/>
+            </label></p>
+            <p><label>Produs mediu (10 &le; cantitate &lt; 30)
+                <input id="i_rad2"  name="gr_rad" value="10:30" type="radio"/>
+            </label>
+            <p><label>Produs mare (30 &le; cantitate)
+                <input id="i_rad3" name="gr_rad" value="30:1000000000" type="radio"/>
+            </label>
+            <p><label>Toate
+                <input id="i_rad4" checked name="gr_rad" value="toate" type="radio"/>
+            </label>
+        </div>
+        <label> Pret minim:  0<input type="range" id="inp-pret" value="0" min="0"  max="100">100 <span id="infoRange">(0)</span></label>
+        <label>Categorie:
+            <select id="inp-categorie">
+                <option id="sel-toate" selected value="toate">toate</option>
+                <% for (let opt of locals.optiuni) { %>
+                    <option value="<%- opt.unnest %>"><%- opt.unnest %> </option>
+                <% } %>
+            </select>
+        </label>
+        <label>Culori:
+            <select id="inp-culori" multiple size="10">
+                <option id="sel-mult-oricare" selected value="oricare">oricare</option>
+                <option value="negru">negru</option>
+                <option value="alb">alb</option>
+                <option value="nud">nud</option>
+                <option value="maro">maro</option>
+                <option value="rosu">rosu</option>
+                <option value="albastru">albastru</option>
+                <option value="verde">verde</option>
+                <option value="roz">roz</option>
+                <option value="mov">mov</option>
+                <option value="galben">galben</option>
+            </select>
+        </label>
+        <div>Selectare culori avansata:
+            <p>
+            <label>orice culoare
+                <input id="i_check_oricare" name="gr_chck" checked value="oricare" type="checkbox"/>
+            </label>
+            </p>
+            <p>
+            <label>negru
+                <input id="i_check_negru" name="gr_chck" value="negru" type="checkbox"/>
+                    <label>are 
+                        <input id="i_rad1_are" checked name="gr_rad1" value="are" type="radio"/>
+                    </label>
+                    <label>nu are 
+                        <input id="i_rad1_nu_are" name="gr_rad1" value="nu are" type="radio"/>
+                    </label>
+            </label>
+            </p>
+            <p>
+            <label>alb
+                <input id="i_check_alb" name="gr_chck" value="alb" type="checkbox"/>
+                    <label>are 
+                        <input id="i_rad2_are" checked name="gr_rad2" value="are" type="radio"/>
+                    </label>
+                    <label>nu are 
+                        <input id="i_rad2_nu_are" name="gr_rad2" value="nu are" type="radio"/>
+                    </label>
+            </label>
+            </p>
+            <p>
+            <label>nud
+                <input id="i_check_nud" name="gr_chck" value="nud" type="checkbox"/>
+                    <label>are 
+                        <input id="i_rad3_are" checked name="gr_rad3" value="are" type="radio"/>
+                    </label>
+                    <label>nu are 
+                        <input id="i_rad3_nu_are" name="gr_rad3" value="nu are" type="radio"/>
+                    </label>
+            </label>
+            </p>
+            <p>
+            <label>maro
+                <input id="i_check_maro" name="gr_chck" value="maro" type="checkbox"/>
+                    <label>are 
+                        <input id="i_rad4_are" checked name="gr_rad4" value="are" type="radio"/>
+                    </label>
+                    <label>nu are 
+                        <input id="i_rad4_nu_are" name="gr_rad4" value="nu are" type="radio"/>
+                    </label>
+            </label>
+            </p>
+            <p>
+            <label>rosu
+                <input id="i_check_rosu" name="gr_chck" value="rosu" type="checkbox"/>
+                    <label>are 
+                        <input id="i_rad5_are" checked name="gr_rad5" value="are" type="radio"/>
+                    </label>
+                    <label>nu are 
+                        <input id="i_rad5_nu_are" name="gr_rad5" value="nu are" type="radio"/>
+                    </label>
+            </label>
+            </p>
+            <p>
+            <label>albastru
+                <input id="i_check_albastru" name="gr_chck" value="albastru" type="checkbox"/>
+                    <label>are 
+                        <input id="i_rad6_are" checked name="gr_rad6" value="are" type="radio"/>
+                    </label>
+                    <label>nu are 
+                        <input id="i_rad6_nu_are" name="gr_rad6" value="nu are" type="radio"/>
+                    </label>
+            </label>
+            </p>
+            <p>
+            <label>verde
+                <input id="i_check_verde" name="gr_chck" value="verde" type="checkbox"/>
+                    <label>are 
+                        <input id="i_rad7_are" checked name="gr_rad7" value="are" type="radio"/>
+                    </label>
+                    <label>nu are 
+                        <input id="i_rad7_nu_are" name="gr_rad7" value="nu are" type="radio"/>
+                    </label>
+            </label>
+            </p>
+            <p>
+            <label>roz
+                <input id="i_check_roz" name="gr_chck" value="roz" type="checkbox"/>
+                    <label>are 
+                        <input id="i_rad8_are" checked name="gr_rad8" value="are" type="radio"/>
+                    </label>
+                    <label>nu are 
+                        <input id="i_rad8_nu_are" name="gr_rad8" value="nu are" type="radio"/>
+                    </label>
+            </label>
+            </p>
+            <p>
+            <label>mov
+                <input id="i_check_mov" name="gr_chck" value="mov" type="checkbox"/>
+                    <label>are 
+                        <input id="i_rad9_are" checked name="gr_rad9" value="are" type="radio"/>
+                    </label>
+                    <label>nu are 
+                        <input id="i_rad9_nu_are" name="gr_rad9" value="nu are" type="radio"/>
+                    </label>
+            </label>
+            </p>
+            <p>
+            <label>galben
+                <input id="i_check_galben" name="gr_chck" value="galben" type="checkbox"/>
+                    <label>are 
+                        <input id="i_rad10_are" checked name="gr_rad10" value="are" type="radio"/>
+                    </label>
+                    <label>nu are 
+                        <input id="i_rad10_nu_are" name="gr_rad10" value="nu are" type="radio"/>
+                    </label>
+            </label>
+            </p>
+        </div>
+        <label>Tipul produselor: 
+            <input list="id_lista" id="i_datalist"/>
+            <datalist id="id_lista">
+                <option id="datalist_oricare" value="oricare">Orice tip de produs</option>
+                <option value="palete de farduri">Palete de farduri</option>
+                <option value="creioane de ochi">Creioane de ochi</option>
+                <option value="sprancene">Sprancene</option>
+                <option value="mascara">Mascara</option>
+                <option value="fonduri de ten">Fonduri de ten</option>
+                <option value="iluminatoare">Iluminatoare</option>
+                <option value="corectoare">Corectoare</option>
+                <option value="conturarea fetei">Conturarea fetei</option>
+                <option value="blush">Blush</option>
+                <option value="pudra">Pudra</option>
+                <option value="rujuri">Rujuri</option>
+                <option value="lip gloss">Lip gloss</option>
+                <option value="balsamuri de buze">Balsamuri de buze</option>
+                <option value="creioane de buze">Creioane de buze</option>
+            </datalist>
+        </label>
+        <label>Tipul culorilor (reci, calde, mixte):
+            <textarea id="i_textarea">mixte</textarea>
+        </label>
+        <p>
+        <button id="filtrare">Filtreaza</button> <button id="resetare">Reseteaza</button><br/>
+        <button id="sortCrescNume">Sorteaza crescator dupa raportul cantitate/pret si subcategorie</button>
+        <button id="sortDescrescNume">Sorteaza descrescator dupa raportul cantitate/pret si subcategorie</button>
+        
+        </p>
+        
+        <p id="p-suma">Apăsați Alt+"c" pentru suma preturilor produselor afișate. </p>
+       
+       
+        <section id="produse">
+            <h2>Produse</h2>
+            <div class="grid-produse">
+                <% for( let prod of locals.produse) { %>
+                    <article class="produs" >
+                        <h3 class="nume">Nume: <a href="/produs/<%-prod.id %>" ><span class="val-nume"><%- prod.nume%></span></a></h3>
+                        <div class="info-prod">
+                            <p class="pret">Pret: <span class="val-pret"><%- prod.pret%></span></p>
+                            <p class="cantitate">Cantitate(g): <span class="val-cantitate"><%- prod.cantitate%></span></p>
+                            <p class="descriere">Tipul culorilor: <span class="val-tip_culori"><%- prod.tip_culori%></span></p>
+                            <p class="culori">Culori: 
+                                <% for(let c of prod.culori) { %>
+                                    <span class="val-culori">
+                                     <%-c %>
+                                    </span>
+                                <% } %>
+                            </p>
+                            <p class="data">Data adaugarii: <time class="val-data"><%- prod.data_adaugare.getDate()%>
+                            <%
+                                let l=prod.data_adaugare.getMonth();
+                                let afis;
+                                l = l + 1;
+                                if(l==1){
+                                    afis = "Ianuarie";
+                                }
+                                else{
+                                    if(l==2){
+                                        afis = "Februarie";
+                                    }
+                                    else{
+                                        if(l==3){
+                                            afis = "Martie";
+                                        }
+                                        else{
+                                            if(l==4){
+                                                afis = "Aprilie";
+                                            }
+                                            else{
+                                                if(l==5){
+                                                    afis = "Mai";
+                                                }
+                                                else{
+                                                    if(l==6){
+                                                        afis = "Iunie";
+                                                    }
+                                                    else{
+                                                        if(l==7){
+                                                            afis = "Iulie";
+                                                        }
+                                                        else{
+                                                            if(l==8){
+                                                                afis = "August";
+                                                            }
+                                                            else{
+                                                                if(l==9){
+                                                                    afis = "Septembrie";
+                                                                }
+                                                                else{
+                                                                    if(l==10){
+                                                                        afis = "Octombrie";
+                                                                    }
+                                                                    else{
+                                                                        if(l==11){
+                                                                            afis = "Noiembrie";
+                                                                        }
+                                                                        else{
+                                                                            if(l==12){
+                                                                                afis = "Decembrie";
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            %>
+                            <%- afis %>
+                            <%- prod.data_adaugare.getFullYear() %>
+                            <% 
+                                let z = prod.data_adaugare.getDay();
+                                let a;
+                                z = z + 1;
+                                switch(z){
+                                    case 1:
+                                        a = "Luni";
+                                        break;
+                                    case 2:
+                                        a = "Marti";
+                                        break;
+                                    case 3:
+                                        a = "Miercuri";
+                                        break;
+                                    case 4:
+                                        a = "Joi";
+                                        break;
+                                    case 5:
+                                        a = "Vineri";
+                                        break;
+                                    case 6:
+                                        a = "Sambata";
+                                        break;
+                                    case 7:
+                                        a = "Duminica";
+                                        break;
+                                }
+                            %>
+                            [<%- a%>]
+                            </time></p>
+                            <p class="vegan">Produs vegan: <span class="val-vegan"><%- prod.produs_vegan %></span></p>
+                        </div>
+                        <div class="info-prod2">
+                            <p class="categorie">Categorie:<span class="val-categorie" class="<%-prod.categorie%>"><%- prod.categorie%></span></p>
+                            <p class="tip_produs">Subcategorie:<span class="val-tip_produs"><%- prod.tip_produs%></span></p>
+                            <p class="descriere">Descriere produs:<span class="val-descriere"><%-prod.descriere%></span></p>
+                            <p class="id">Id-ul produsului:<span class="val-id">artc-<%-prod.id%></span></p>
+                        </div>  
+                        <figure>
+                            <a href="/produs/<%-prod.id %>" ><img src="/resurse/imagini/produse/<%- prod.imagine %>" style="width:auto;height:200px;" alt="[imagine <%- prod.nume %>]" /></a>
+                        </figure>
+                        <label class="selecteaza-cos">
+                            Selectează:<br/>
+                            <input type="checkbox" class="select-cos" value="<%-prod.id %>" autocomplete="off">
+                        </label>
+                    </article>
+                <% }%>
+            </div>
+        </section>
+    </main>
+
+    <%- include("../fragmente/footer") %>
+    </body>
+</html>

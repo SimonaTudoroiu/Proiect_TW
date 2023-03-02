@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html  lang="ro">
+    <head>
+        <meta name="description" content="Firma Colourful Make-up ofera produse de make-up calitative la un pret accesibil, cu posibilitatea comandarii online a produselor si livrarea in 24-48 de ore. Produsele noastre sunt vegane, de o calitate superioara, facute special pentru o aplicare usoara a produselor. Va invitam sa le incercati si sa va bucurati de ele cel putin la fel de mult precum ne-am bucurat noi sa le fabricam!">
+        <meta name="keywords" content="make-up, make-up look, machiaj, trusa machiaj, palete machiaj, Colourful Make-up, machiaj, machiaje, site de machiaje, site machiaje, produse de machiaj, truse machiaj, truse de machiaj, Colourful, make-up, machiaj, firma machiaj, palete, palete de machiaj, palete de farduri, fard, farduri, fard de ochi, mascara, rimel, creioane de ochi, ochi, creioane, pomade, pomada, creion de sprancene, gel de sprancene, trusa de machiaj, produse pentru fata, fond de ten, fonduri de ten, blush, iluminatoare, iluminator, corector, corectoare, conceler, contur, contur fata, contur de fata, contur pentru fata, pudra, pudra pentru fata, pudra translucida, acoperire, buze, rujuri, produse pentru buze, lip gloss, balsam de buze, creioane de buze, produse buze">
+        <title>Colourful Make-up</title>
+        <%- include("../fragmente/head.ejs"); %>
+
+        <script src="https://kit.fontawesome.com/f5dfffb5a7.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+        <link href="/resurse/css/produs.css" type="text/css" rel="stylesheet" />
+
+    </head>
+    <body>
+    <%- include("../fragmente/header") %>
+
+    <main>
+        <section>
+            <h2>Pagină produs</h2>
+                <article id="art-produs">
+                    <h3><span class="nume"><%- locals.prod.nume %></span></h3>
+                    <p>Pret: <span class="pret"><%- locals.prod.pret %> </span></p>
+                    <p>Descriere: <span class="descriere"><%- locals.prod.descriere %> </span></p>
+                    <p>Culori: <span class="culori"><%- locals.prod.culori %> </span></p>
+                    <p>Cantitate(g): <span class="cantitate"><%- locals.prod.cantitate %> </span></p>
+                    <p>Tipul culorilor: <span class="tip_culori"><%- locals.prod.tip_culori %> </span></p>
+                    <p>Categorie: <span class="categorie"><%- locals.prod.categorie %> </span></p>
+                    <p>Produs vegan: <span class="produs_vegan"><%- locals.prod.produs_vegan %> </span></p>
+                    <p>Data adăugare: <span class="categorie"><time><%- locals.prod.data_adaugare %></time></span></p>
+                    <p>Bucati ramase: <span class="nr_bucati"><%-locals.prod.nr_bucati%></span></p>
+                    <figure class="imag-produs">
+                        <img  src="/resurse/imagini/produse/<%- locals.prod.imagine %>" alt="[imagine <%- locals.prod.nume %>]" />
+                    </figure>    
+                </article>
+            
+        </section>
+    </main>
+
+    <%- include("../fragmente/footer") %>
+    </body>
+</html>
